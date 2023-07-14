@@ -1,0 +1,719 @@
+$regular: "Oswald-Regular"!important
+$bold: "Oswald-Bold"!important
+$medium: "Oswald-Medium"!important
+$light: "Oswald-Light"!important
+$link-color: #D50302
+$bg-color: #fff
+$text-color: #000
+$active: $link-color
+$title: $active
+$btn-color: $bg-color
+$bg-btn: $active
+$my: 106px 0!important
+$padding: 20px 26px!important
+$py: 20px
+$px: 26px 
+$border: 1px solid $text-color!important
+$radius: 4px!important
+$border-btn: 1px solid $active!important
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+@font-face
+    font-family: "Oswald-Bold"
+    src: url(../fonts/Oswald-Bold.ttf)
+
+@font-face
+    font-family: "Oswald-Light"
+    src: url(../fonts/Oswald-Light.ttf)
+
+@font-face
+    font-family: "Oswald-Regular"
+    src: url(../fonts/Oswald-Regular.ttf)
+
+@font-face
+    font-family: "Oswald-Medium"
+    src: url(../fonts/Oswald-Medium.ttf)
+
+body, html
+    min-height: 100%
+
+body
+    font-family: $regular
+
+hr
+    margin: 17px 0
+    border: none!important
+    opacity: 1!important
+    height: 5px!important
+    background-color: $active
+    width: 52px
+    border-radius: $radius
+
+a
+    text-decoration: none!important
+    font-size: 14px
+    font-family: $light
+    color: $link-color
+
+p
+    font-family: $light
+    font-size: 16px!important 
+    color: $text-color
+
+h1
+    font-size: 42px!important
+    font-family: $bold
+
+h2
+    font-size: 36px!important
+    font-family: $medium
+
+h3
+    font-size: 24px!important
+    font-family: $medium
+
+h4
+    font-size: 16px!important
+    font-family: $medium
+
+h5
+    font-size: 14px!important
+    font-family: $medium
+
+h6
+    font-size: 12px!important
+    font-family: $medium
+
+
+@media (max-width: 1199px)
+    h1
+        font-size: 36px!important
+    h2
+        font-size: 24px!important
+    h3
+        font-size: 16px!important
+    h4
+        font-size: 14px!important
+    h5
+        font-size: 12px!important
+    h6
+        font-size: 10px!important
+
+
+.about-school, .select-sport, .trainer, .gallery, .contact, .feedback, .reviews, .news, .links, .post
+    margin: $my
+
+.navbar
+    padding: 27px 0!important
+    background: $bg-color
+    box-shadow: 0px 4px 10px 4px #6B6B6B40
+
+.navbar-brand h4
+    color: $text-color!important
+
+.navbar-brand span
+    font-size: 12px!important
+    color: $title
+    display: block 
+    margin-top: 17px
+
+@media (max-width: 1399px)
+    .navbar-brand h4
+        font-size: 14px!important
+
+@media (max-width: 1199px)
+    .navbar-brand h4
+        font-size: 12px!important
+    .navbar-brand span
+        font-size: 10px!important
+
+@media (max-width: 991px)
+    .navbar-brand h4
+        font-size: 14px!important
+    .navbar-brand span
+        font-size: 12px!important
+
+@media (max-width: 370px)
+    .navbar-brand h4
+        font-size: 10px!important
+    .navbar-brand span
+        font-size: 8px!important
+
+@media (max-width: 991px)
+    .navbar-nav
+        margin-top: 32px
+        border-top: 1px solid #6B6B6B40
+
+
+.nav-link
+    color: $text-color!important
+    font-size: 16px!important
+    font-family: $medium
+    padding: 0 10px!important
+    box-shadow: none!important
+    transition: .5s ease
+
+.nav-link:hover
+    color: $active!important
+
+@media (max-width: 991px)
+    .nav-item
+        margin: 17px 0
+
+@media (max-width: 1399px)
+    .nav-link
+        font-size: 14px!important
+
+@media (max-width: 1199px)
+    .nav-link
+        font-size: 12px!important
+
+@media (max-width: 991px)
+    .nav-link
+        font-size: 16px!important
+
+.navbar-toggler
+    border: 1px solid $text-color!important
+    color: $text-color
+    box-shadow: none!important
+
+@media (max-width: 370px)
+    .navbar-toggler
+        padding: 2px 4px!important
+
+
+.nav-link.active
+    color: $active!important
+    
+.dropdown-menu
+    min-width: auto!important 
+    padding: 0px!important
+    border: $border
+    transition: .5s ease
+    box-shadow: 0px 0px 10px 4px #6B6B6B25!important
+    background: $text-color!important
+    border-radius: $radius!important
+
+.dropdown-menu[data-bs-popper]
+    margin-top: 26px!important
+    border-radius: $radius!important
+
+@media (max-width: 991px)
+    .dropdown-menu[data-bs-popper]
+        margin-top:16px!important
+
+.dropdown-item
+    color: $text-color!important
+    font-size: 16px!important
+    font-family: $medium
+    padding: 10px 20px!important
+    box-shadow: none!important
+    transition: .5s ease
+    width: 100%
+    color: $bg-color!important
+    border-radius: $radius!important
+
+.dropdown-item a
+    border-radius: $radius!important
+
+.dropdown-item:hover
+    color: $active!important
+
+@media (max-width: 1399px)
+    .dropdown-item
+        font-size: 14px!important
+
+@media (max-width: 1199px)
+    .dropdown-item
+        font-size: 12px!important
+
+.carousel-caption
+    top: 35%
+
+.carousel-caption p
+    max-width: 500px
+    width: 100%
+    margin-bottom: 36px!important
+    color: $bg-color!important
+
+.carousel-item img
+    width: 100%
+    height: 100vh
+    object-fit: cover
+
+.carousel-indicators
+    top: 45%
+    margin-right: 15%!important
+    margin-left: auto!important
+    width: 72px!important
+
+@media (max-width: 814px)
+    .carousel-indicators
+        top: auto
+ 
+@media (max-width: 1199px)
+    .dropdown-item
+        font-size: 12px!important
+
+@media (max-width: 991px)
+    .dropdown-item
+        font-size: 16px!important
+
+.carousel-indicators button
+    display: block!important
+
+.carousel-indicators [data-bs-target]
+    opacity: 1!important
+    border-radius: $radius
+    border: none!important
+    margin: 33px 0
+    width: 36px!important
+    height: 5px!important
+    margin-right: 0!important
+    margin-left: auto!important
+    transition: .5s ease!important
+
+.carousel-indicators .active
+    background-color: $active!important
+    width: 72px!important
+
+.btn
+    color: $btn-color!important
+    background-color: $bg-btn!important
+    padding: 20px!important
+    font-size: 16px
+    font-family: $medium
+    border: $border-btn
+    transition: .7s ease!important
+
+.btn a
+    color: $btn-color!important
+    font-family: $medium
+    font-size: 16px!important
+
+@media (max-width: 991px)
+    .btn
+        font-size: 14px!important
+        padding: 15px!important
+    .btn a
+        font-size: 14px!important
+
+@media (max-width: 767px)
+    .btn
+        font-size: 12px!important
+        padding: 10px!important
+    .btn a
+        font-size: 12px!important
+
+.btn:hover
+    color: $btn-color!important
+    background-color: $text-color!important
+    padding: 20px!important
+    font-size: 16px
+    font-family: $medium
+    border: $border-btn
+
+.btn img
+    width: 20px
+    height: 20px
+    margin-left: 27px
+    margin-bottom: 5px
+
+.title-block h2 span
+    color: $active
+
+@media (max-width: 767px)
+    .title-block h2
+        margin-top: 32px
+
+.img-block img
+    width: 100%
+    max-height: 450px
+    min-height: 100%
+    object-fit: cover
+    object-position: right
+    border-radius: $radius
+
+.img-block
+    width: 100%
+    height: 100%
+
+.about-school .text-block p 
+    margin-bottom: 17px!important
+
+.about-school .btn-block
+    margin-top: 8px!important   
+
+.img-sport
+    width: 140px
+    height: auto
+
+@media (max-width: 767px)
+    .select-sport .col-xl-4
+        height: 100%
+
+.card
+    padding: $padding
+    max-width: 364px
+    width: 100%
+    margin: 15px auto!important
+    border: none!important
+    box-shadow: 0px 0px 10px 4px #6B6B6B25
+    transition: .5s ease
+
+.card:hover
+    box-shadow: 0px 0px 15px 4px #6B6B6B55!important
+
+@media (max-width: 991px)
+    .card
+        height: 100%!important
+
+.card h3 
+    color: $text-color
+    margin-bottom: 10px!important
+    margin-top: 20px!important
+
+.card h6
+    color: $active
+    margin-bottom: 11px
+
+.card p
+    margin-bottom:11px
+
+.card a 
+    color: $active
+    font-size: 14px
+
+.card a img
+    width: 16px
+    height: auto
+    margin-left: 4px
+
+.link-card
+    margin-top: 9px
+
+//slider
+
+.thumbnail
+    padding: 0 12px
+
+.owl-carousel 
+    touch-action: none
+    position: relative
+    z-index: 1
+
+.select-sport .thumbnail, .trainer .thumbnail, .links .thumbnail
+    width: 100% !important
+    max-width: 100%!important
+    height: 100%
+
+.select-sport .owl-carousel .owl-stage, .trainer .owl-carousel .owl-stage, .links .owl-carousel .owl-stage
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-box
+    display: box
+
+.select-sport .owl-stage-outer, .trainer .owl-stage-outer, .links .owl-stage-outer
+    padding: 0
+    overflow: hidden
+
+.select-sport .owl-carousel .owl-item, .trainer .owl-carousel .owl-item, .links .owl-carousel .owl-item
+    display: flex
+    flex: 0 auto
+    width: 100%
+
+.select-sport .owl-carousel .owl-item .card
+    padding: $padding
+    max-width: 364px
+    width: 100%
+    margin: 15px auto!important
+    border: none!important
+    box-shadow: 0px 0px 10px 4px #6B6B6B25
+
+.trainer .owl-carousel .owl-item .card, .links .owl-carousel .owl-item .card
+    padding: 0!important
+    max-width: 364px
+    width: 100%
+    margin: 15px auto!important
+    border: none!important
+    box-shadow: 0px 0px 10px 4px #6B6B6B25
+
+.trainer .owl-carousel .owl-item .card .img-sport
+    width: 100%!important
+
+.trainer .owl-carousel .owl-item .card img
+    width: 100%!important
+    height: 291px!important
+    object-fit: cover
+
+@media (max-width: 991px)
+    .select-sport .owl-carousel .owl-item .card, .trainer .owl-carousel .owl-item, .links .owl-carousel .owl-item
+        max-height: 439.19px!important
+        height: 100%!important
+
+@media (max-width: 767px)
+    .select-sport .owl-carousel .owl-item, .trainer .owl-carousel .owl-item, .links .owl-carousel .owl-item
+        height: 100%!important
+
+.select-sport .owl-nav, .trainer .owl-nav, .links .owl-nav
+    display: none
+
+.select-sport .owl-dots button, .trainer .owl-dots button, .links .owl-dots button
+    max-width: 100px
+    width: 100%
+    height: 5px
+    border: none
+    margin: 0 16px
+    background: transparent 
+
+.owl-prev, .owl-next
+    display: none
+
+.select-sport .owl-dots, .trainer .owl-dots, .links .owl-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 32px
+
+.select-sport .owl-dots button, .trainer .owl-dots button, .links .owl-dots button
+    max-width: 36px!important
+    height: 5px
+    background: $text-color
+    border-radius: $radius
+    transition: .2s ease
+
+.select-sport .owl-dot.active, .trainer .owl-dot.active, .links .owl-dot.active
+    background: $active!important
+
+.gallery .img-block img
+    filter: brightness(60%)
+    max-height: 271px!important
+    height: 100%
+
+.gallery .col-7, .gallery .col-5
+    margin-top: 17px!important
+
+.title-gallery
+    padding: $padding
+
+.title-gallery h3 
+    color: $btn-color
+
+.title-gallery h3 span
+    color: $active
+
+.icon-block
+    padding-bottom: 39px!important
+
+.contact .line
+    margin-bottom: 58px
+
+.icon-block img
+    width: 21px
+    height: auto
+    margin-right: 32.79px
+
+.icon-block h4 
+    margin-bottom: 4px!important
+
+.form-control
+    height:42px!important
+    border: 1px solid $text-color!important
+    box-shadow: none!important
+    font-size: 16px!important
+    border-radius: $radius!important
+    transition: .5s ease
+
+.form-control:focus
+    border: 1px solid $active!important
+
+.form-control::placeholder
+    color: $text-color!important
+    font-family: $light
+    font-size: 16px!important
+
+textarea.form-control
+    height: 125px!important
+
+.feedback .line
+    margin-bottom: 32px
+
+.contact .btn-block
+    margin-top: 0!important
+
+.feedback .btn-block .btn
+    margin-top: 9px!important
+
+.reviews .line
+    margin-bottom: 60px!important
+
+.reviews-block
+    box-shadow: 0px 0px 10px 4px #6B6B6B25
+    border-radius: $radius
+    padding: $padding
+    max-width: 751px
+    width: 100%s  
+
+.img-reviews img
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    margin-top: -60px!important
+
+.reviews-text h3 
+    margin-top: 17px
+
+.reviews-text h6 
+    margin-top: 5px
+    color: $active
+
+.quotes
+    font-size:100px!important
+    height: 35px
+    line-height: 100px
+    margin: 16px 0!important
+
+.date-news
+    margin-top: 20px!important
+
+.type-sport
+    color: $text-color!important
+
+@media (max-width: 767px)
+    .news .col-12
+        margin-top: 32px
+
+.news .card h3 
+    margin: 12px 0!important
+
+.news .card 
+    padding: 0px!important
+    margin: 0 auto!important
+
+.news .card-body
+    padding: $padding
+
+.news .img-sport
+    width: 100%
+    height: 168px
+
+.news .img-sport img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.news .btn-block
+    margin-top: 32px
+
+.links .img-link img
+    max-width: 170px
+    width: 100%
+    height: auto!important
+
+.links .owl-stage
+    display: flex
+    align-items: center
+    justify-content: center
+
+.footer
+    padding: 53px 0
+    background-color: $text-color
+
+.footer h4 
+    color: $bg-color!important
+
+.list-group-item
+    border: none!important
+    background: transparent!important
+    color: $bg-color!important
+    font-size: 20px!important
+    font-family: $medium
+    padding: 10px!important
+    box-shadow: none!important
+    transition: .5s ease
+
+.list-group-item a
+    color: $bg-color!important
+    font-size: 20px!important
+    font-family: $medium
+    box-shadow: none!important
+    transition: .5s ease
+
+.footer h3
+    color: $bg-color
+
+.footer .line
+    margin-bottom: 16px!important
+
+.footer .contact-text p 
+    color: $bg-color
+
+@media (max-width: 991px)
+    .footer .navbar-brand span
+        margin-bottom: 32px
+
+@media (max-width: 575px)
+    .footer .title-block
+        margin-top: 32px
+
+.bg-page
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../../assets/img/bg.jpg)
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    height: 350px
+    margin-top: 100px
+    backdrop-filter: brightness(60%)
+
+@media (max-width: 1199px)
+    .bg-page
+        height: 200px!important
+
+@media (max-width: 767px)
+    .bg-page
+        margin-top: 110px
+
+@media (max-width: 370px)
+    .bg-page
+        margin-top: 100px
+
+@media (max-width: 767px)
+    .bg-page .title-block h2
+        margin-top: 0!important
+
+.bg-page h2
+    color: $bg-color
+
+.breadcrumb
+    margin-top: 15px
+
+.breadcrumb-item, .breadcrumb-item a
+    font-size: 14px
+    font-family: $medium
+
+.breadcrumb-item a
+    color: $bg-color
+    transition: .5s ease
+
+.breadcrumb-item.active, .breadcrumb-item a:hover
+    color: $active!important
+
+.breadcrumb-item+.breadcrumb-item::before
+    color: $bg-color!important
+
+.post .title-block
+    margin-top: 32px
+
+.last-posts .card
+    width: 100%!important
+    padding: 0!important
+
+.last-posts .card-body
+    padding: 10px 13px!important
+
+.last-posts .img-sport
+    width: 100%
